@@ -1,0 +1,130 @@
+/* Reset básico para manter consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão */
+    background-color: #121212; /* Fundo preto fosco */
+    color: #e0e0e0; /* Texto claro para contraste */
+    display: flex; /* Centraliza o conteúdo */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da janela */
+    padding: 20px; /* Espaçamento para telas pequenas */
+}
+
+/* Container principal */
+.container {
+    background-color: #1e1e1e; /* Fundo cinza-escuro */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra mais forte para destaque */
+    width: 100%; /* Responsivo: usa largura total disponível */
+    max-width: 400px; /* Limita a largura máxima */
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2rem; /* Tamanho grande para destaque */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #00bcd4; /* Azul claro vibrante */
+}
+
+/* Títulos de seção */
+h2 {
+    font-size: 1.5rem; /* Um pouco menor que o título principal */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #e0e0e0; /* Texto claro */
+}
+
+/* Campos de entrada (inputs) */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 12px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento vertical entre os campos */
+    border: 1px solid #333; /* Borda cinza-escura */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Texto legível */
+    background-color: #2a2a2a; /* Fundo cinza mais escuro */
+    color: #e0e0e0; /* Texto claro */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Efeito ao focar nos campos de entrada */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #00bcd4; /* Muda a borda para azul claro */
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5); /* Adiciona uma leve sombra azul */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Botões gerais */
+button {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 12px; /* Espaçamento interno */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+/* Botão primário (Log In) */
+.btn-primary {
+    background-color: #00bcd4; /* Azul claro */
+    color: #121212; /* Texto escuro para contraste */
+}
+
+.btn-primary:hover {
+    background-color: #0097a7; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Eleva o botão ao passar o mouse */
+}
+
+/* Botão secundário (Sign Up) */
+.btn-secondary {
+    background-color: #424242; /* Cinza escuro */
+    color: #e0e0e0; /* Texto claro */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.btn-secondary:hover {
+    background-color: #616161; /* Cinza mais claro ao passar o mouse */
+    transform: translateY(-2px); /* Eleva o botão ao passar o mouse */
+}
+
+/* Links */
+a {
+    display: block; /* Ocupa uma linha completa */
+    margin-top: 15px; /* Espaçamento superior */
+    color: #00bcd4; /* Azul claro */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 0.9rem; /* Texto menor para links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Reduz o espaçamento em telas menores */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Reduz o tamanho dos títulos de seção */
+    }
+
+    button {
+        font-size: 0.9rem; /* Texto menor nos botões */
+    }
+}
